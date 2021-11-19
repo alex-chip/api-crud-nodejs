@@ -4,11 +4,15 @@ const router = Router()
 
 router
   .get('/', (req, res) => {
-    res.send('NodeJS!')
+    res.render('index')
   })
 
   .get('/about', (req, res) => {
-    res.send('About!')
+    res.render('about')
+  })
+
+  .get('/edit', (req, res) => {
+    res.render('edit')
   })
 
 export default router
